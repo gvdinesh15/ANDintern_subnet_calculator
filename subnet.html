@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Subnet Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Subnet Calculator</h1>
+        <label for="ipAddress">IP Address:</label>
+        <input type="text" id="ipAddress" placeholder="e.g., 192.168.1.1">
+        <label for="subnetMask">Subnet Mask:</label>
+        <input type="text" id="subnetMask" placeholder="e.g., 255.255.255.0">
+        <button onclick="calculateSubnet()">Calculate</button>
+        <div class="result">
+            <p>Network Address: <span id="networkAddress"></span></p>
+            <p>First Host: <span id="firstHost"></span></p>
+            <p>Last Host: <span id="lastHost"></span></p>
+            <p>Broadcast Address: <span id="broadcastAddress"></span></p>
+            <p>Available Hosts: <span id="availableHosts"></span></p>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+
+</html>
